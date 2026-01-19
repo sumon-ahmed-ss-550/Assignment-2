@@ -54,13 +54,15 @@ header {
   position: relative;
   position: relative;
 }
+
 .navbar .navbar-nav {
   align-items: center;
   gap: 32px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 10px;
+  padding-top: 10px;
+  transition: 0.2s ease;
 }
 .navbar .nav-link {
   color: var(--white);
@@ -68,12 +70,12 @@ header {
   font-weight: var(--fw-medium);
   line-height: 120%;
 }
-.navbar button[type="button"] {
+.navbar .subscribe {
   background:
     url("../assets/Vector.png"), linear-gradient(#f7e93f, #fb09b4, #9100f8);
   background-repeat: no-repeat;
   background-position: 90% center;
-  padding: 12px 40px 12px 16px;
+  padding: 10px 40px 10px 16px;
   border: none;
   border-radius: 1000px;
   color: var(--white);
@@ -81,4 +83,15 @@ header {
   font-weight: var(--fw-semibold);
   line-height: auto;
   cursor: pointer;
+}
+.navbar .hamburger {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.navbar .hamburger img {
+  width: 100%;
 }

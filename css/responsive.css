@@ -1,0 +1,16 @@
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-nav {
+    position: absolute;
+    left: 55%;
+    transform: translateX(-55%);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar .collapse {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+}
