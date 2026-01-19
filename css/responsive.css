@@ -5,6 +5,9 @@
     left: 55%;
     transform: translateX(-55%);
   }
+  .podcast-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (max-width: 700px) {
   .navbar .collapse {
@@ -12,5 +15,16 @@
   }
   .navbar .hamburger {
     display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .podcast-info {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .banner-img span {
+    right: 30px;
+    top: 20px;
   }
 }
