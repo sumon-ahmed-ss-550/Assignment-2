@@ -404,6 +404,22 @@ footer span {
   text-align: center;
 }
 
+/* hover-section */
+.navbar .subscribe:hover {
+  background:
+    url("../assets/Vector.png"),
+    linear-gradient(380deg, #9100f8, #fb09b4 40%, #f7e93f 90%);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+.banner .btn1:hover {
+  background:
+    url("../assets/spotify.png"),
+    linear-gradient(380deg, #9100f8, #fb09b4 40%, #f7e93f 90%);
+  background-repeat: no-repeat;
+  background-position: 8% center;
+}
+
 /* Animation */
 @keyframes animated {
   0% {
