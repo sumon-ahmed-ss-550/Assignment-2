@@ -446,6 +446,10 @@ footer span {
   background-repeat: no-repeat;
   background-position: 8% center;
 }
+.banner .btn2:hover {
+  background-image:
+    url("../assets/message.png"), linear-gradient(#412567, #190e38);
+}
 .navbar .nav-item:hover::before {
   width: 50%;
 }
