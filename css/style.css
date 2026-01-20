@@ -360,3 +360,38 @@ header {
   align-items: center;
   gap: 12px;
 }
+
+/* footer-section */
+footer {
+  padding: 120px 0;
+  background-image: url("../assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+footer ul {
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+footer img:not(.foot-item img) {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.foot-item {
+  gap: 8px;
+}
+.foot-item p {
+  color: var(--white);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-medium);
+  line-height: auto;
+}
+footer span {
+  color: #fafafa;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  line-height: 24px;
+  display: block;
+  text-align: center;
+}
