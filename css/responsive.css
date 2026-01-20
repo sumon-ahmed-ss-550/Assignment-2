@@ -15,6 +15,20 @@
   .tech-wave-items .item4 {
     grid-column: 1 span;
   }
+  .feature-episode {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-episode .collapse {
+    grid-column: 2 span;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .feature-episode {
+    grid-template-columns: 1fr;
+  }
+  .feature-episode .collapse {
+    grid-column: 1 span;
+  }
 }
 @media only screen and (max-width: 768px) {
   .navbar .navbar-nav {
@@ -35,6 +49,15 @@
   }
   .tech-wave-items {
     grid-template-columns: 1fr;
+  }
+  footer ul {
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .meet-host-container {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 390px) {
