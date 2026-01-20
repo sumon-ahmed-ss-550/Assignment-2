@@ -59,6 +59,10 @@
 /* header-section */
 header {
   background-color: var(--dark-gray);
+  border-bottom: 1px solid #412567;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .navbar {
   padding: 24px 0;
