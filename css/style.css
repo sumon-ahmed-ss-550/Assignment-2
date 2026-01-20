@@ -123,12 +123,14 @@ header {
   background-position: center;
   position: relative;
   margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .banner .banner-img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  animation-name: animated;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .banner-img span {
   background-color: #00ff88;
@@ -396,4 +398,17 @@ footer span {
   line-height: 24px;
   display: block;
   text-align: center;
+}
+
+/* Animation */
+@keyframes animated {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
