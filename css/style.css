@@ -80,6 +80,33 @@ header {
   padding-top: 10px;
   transition: 0.2s ease;
 }
+.navbar .nav-item {
+  position: relative;
+}
+.navbar .nav-item::before {
+  display: block;
+  clear: both;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #412567;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease;
+}
+.navbar .nav-item::after {
+  display: block;
+  clear: both;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #412567;
+  top: 0;
+  right: 0;
+  transition: 0.2s ease;
+}
 .navbar .nav-link {
   color: var(--white);
   font-size: var(--fs-16);
@@ -418,6 +445,12 @@ footer span {
     linear-gradient(380deg, #9100f8, #fb09b4 40%, #f7e93f 90%);
   background-repeat: no-repeat;
   background-position: 8% center;
+}
+.navbar .nav-item:hover::before {
+  width: 50%;
+}
+.navbar .nav-item:hover::after {
+  width: 50%;
 }
 
 /* Animation */
